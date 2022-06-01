@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/authFragment">
+    <fragment
+        android:id="@+id/feedFragment3"
+        android:name="com.example.lesson5.ui.feed.FeedFragment"
+        android:label="FeedFragment" >
+        <action
+            android:id="@+id/action_feedFragment3_to_postCreateFragment"
+            app:destination="@id/postCreateFragment" />
+        <action
+            android:id="@+id/action_feedFragment3_to_fragmentPost2"
+            app:destination="@id/fragmentPost2" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment2"
+        android:name="com.example.lesson5.ui.profile.ProfileFragment"
+        android:label="ProfileFragment" >
+        <action
+            android:id="@+id/action_profileFragment2_to_fragmentPost2"
+            app:destination="@id/fragmentPost2" />
+        <action
+            android:id="@+id/action_profileFragment2_to_postCreateFragment"
+            app:destination="@id/postCreateFragment" />
+        <action
+            android:id="@+id/action_profileFragment2_to_imagesFragment"
+            app:destination="@id/imagesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentPost2"
+        android:name="com.example.lesson5.ui.feed.posts.PostFragment"
+        android:label="fragment_post"
+        tools:layout="@layout/fragment_post" >
+        <argument
+            android:name="postId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_fragmentPost2_to_profileFragment2"
+            app:destination="@id/profileFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/authFragment"
+        android:name="com.example.lesson5.ui.auth.AuthFragment"
+        android:label="AuthFragment" >
+        <action
+            android:id="@+id/action_authFragment_to_profileFragment2"
+            app:destination="@id/profileFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/postCreateFragment"
+        android:name="com.example.lesson5.ui.feed.posts.PostCreateFragment"
+        android:label="PostCreateFragment" >
+        <action
+            android:id="@+id/action_postCreateFragment_to_profileFragment2"
+            app:destination="@id/profileFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/imagesFragment"
+        android:name="com.example.lesson5.ui.profile.images.ImagesFragment"
+        android:label="ImagesFragment" >
+        <argument
+            android:name="profileId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_imagesFragment_to_imageFragment"
+            app:destination="@id/imageFragment">
+            <argument
+                android:name="imageId"
+                app:argType="string" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/imageFragment"
+        android:name="com.example.lesson5.ui.profile.images.ImageFragment"
+        android:label="ImageFragment" >
+        <argument
+            android:name="imageId"
+            app:argType="string" />
+    </fragment>
+</navigation>

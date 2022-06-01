@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">NanoPost</string>
+    <string name="content_with_card">Content with card</string>
+    <string name="content_description">content description</string>
+    <string name="action">action</string>
+    <string name="feed">Feed</string>
+    <string name="explore">Explore</string>
+    <string name="profile">Profile</string>
+    <string name="header">Header</string>
+    <string name="subhead">Subhead</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="_12">12</string>
+    <string name="_5">5</string>
+    <string name="_16">16</string>
+    <string name="photos">photos</string>
+    <string name="subscribers">subscribers</string>
+    <string name="posts">posts</string>
+    <string name="subscribe">Subscribe</string>
+    <string name="images">Images</string>
+    <string name="continueButton">Continue</string>
+    <string name="username">Username</string>
+    <string name="error_tooShort">Username must be longer than 3 characters</string>
+    <string name="error_tooLong">Username must be shorter than 16 characters</string>
+    <string name="error_invalidCharacters">Username contains unsupported characters (allowed are a-z,_, .)</string>
+    <string name="error_taken">Username is taken</string>
+    <string name="password">Password</string>
+    <string name="check">check</string>
+    <string name="newPost">New post...</string>
+    <string name="add_image">Add image...</string>
+    <string name="more">more</string>
+    <string name="delete_post">Delete post</string>
+    <string name="delete_image">Delete image</string>
+    <string name="post">Post</string>
+</resources>
